@@ -20,15 +20,15 @@ all_data.csv - a tidy data set containing the training and test data merged toge
 averages.csv - a tidy data set containing the average of each variable from 2. above, for each activity and each subject  
 
 The run_analysis.R script reads these data from these files:  
-     Data            File name  
-1.  subject id      subject_test.txt  
-2.  activity        y_test.txt  
-3.  measurements    X_test.txt  
-4.  subject id      subject_train.txt  
-5.  activity        y_train.txt  
-6.  measurements    X_train.txt  
+     Data                  File name  
+1.  subject id        subject_test.txt  
+2.  activity          y_test.txt  
+3.  measurements      X_test.txt  
+4.  subject id        subject_train.txt  
+5.  activity          y_train.txt  
+6.  measurements      X_train.txt  
   
-Outline of Analysis in run_analysis.R script 
+Outline of Analysis in run_analysis.R script  
 1. Read in all test data and create my.test.data containing subject id, activity, test or train indicator, and measurement data  
 2. Read in all train data and create my.train.data containing subject id, activity, test or train indicator, and measurement data  
 3. Combine my.test.data and my.train.data to create my.data  
