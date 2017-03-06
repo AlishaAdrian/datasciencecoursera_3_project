@@ -1,8 +1,8 @@
-Alisha A. Waller
-Final Project
-Course 3: Getting and Cleaning Data
+Alisha Adrian  
+Final Project  
+Course 3: Getting and Cleaning Data  
 
-#Code Book for project
+#Code Book for project  
 
 The original code book for the data in this project is in the repo as a Word file.
 In this file, I only describe the processes I used to create new data files from the original data. 
@@ -33,5 +33,18 @@ Goal: Add descriptive variable names
 2. Assign these names to the variables.  
 
 The resulting data frame is tidy because each variable is in its own column and each observation of that variable is in a different row. There is only one table because all data are measurements.
+This data frame is stored in the file all_data.csv  
+
+Goal: Create a new tidy data set, which stores the mean measurement value for each type of measurement, across participants and activities  
+
+1. Load the dplyr library  
+2. Group the data by subject and activity  
+3. Melt the data using subject + activity as the ID  
+4. Create the means using dcast  
+5. Store the new tidy data set into averages.csv  
+
+The resulting data frame is tidy because each variable is in its own column and each observation of that variable is in a different row. There is only one table because all data are measurements.  
+
+
 
 
